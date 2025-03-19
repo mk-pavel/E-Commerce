@@ -1,0 +1,283 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: rebeccapurple
+}
+
+.navbar .logo img {
+    width: 140px;
+}
+
+.search-box input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hover Effect */
+.menu-list a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.auth-buttons .login-btn,
+.auth-buttons .register-btn {
+    padding: 8px 16px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.auth-buttons .login-btn {
+    background-color: #28a745;
+}
+
+.auth-buttons .register-btn {
+    background-color: #007bff;
+}
+
+/* Slider Box */
+.slider-box {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: rgba(255, 0, 0, 0.1); /* Light red background */
+    padding: 20px;
+}
+
+/* Slider Container */
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Slider Item */
+.slider-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: none;
+}
+
+.slider-item.active {
+    display: flex;
+}
+
+/* Slider Content */
+.slider-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Info Text */
+.info-text {
+    max-width: 50%;
+}
+
+.info-text h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-text p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.info-text h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Purchase Button */
+.purchase-btn {
+    padding: 10px 20px;
+    background-color: #ffc107; /* Yellow button */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.purchase-btn:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+}
+
+/* Slider Image */
+.slider-content img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Slider Controls */
+.slider-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.slider-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider-control.prev {
+    left: 10px;
+}
+
+.slider-control.next {
+    right: 10px;
+}
+
+/* Categories */
+.category-section {
+    padding: 30px;
+    background: white;
+    text-align: center;
+}
+
+.category-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category-item {
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.watch-sec { background: gold; }
+.bag-sec { background: blue; }
+.shoe-sec { background: lightblue; }
+
+/* Product & Backpack Sections */
+.product-section, .backpacks {
+    padding: 40px;
+    text-align: center;
+}
+
+.product-grid, .backpack-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.product-card, .card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for consistency */
+    width: 300px; /* Fixed width for all cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.product-card:hover, .card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.product-card img, .card img {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensure images fit nicely */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.product-card h5, .card h5 {
+    font-size: 1.25rem;
+    margin: 15px 0 10px;
+    color: #333;
+}
+
+.product-card p, .card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.product-card h3, .card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.product-card .purchase-btn, .card .btn {
+    padding: 10px 20px;
+    background-color: #ffc107; /* Yellow button */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card .purchase-btn:hover, .card .btn:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+}
+
+/* Button Styling */
+.purchase-btn, .btn {
+    background-color: orange;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content .social-icons img {
+    width: 30px;
+    margin: 10px;
+}
